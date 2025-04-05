@@ -40,3 +40,28 @@ docker exec -it laravel bash
 ```
 docker cp laravel:/var/www/app-laravel/. .
 ```
+
+# Iniciar container com docker compose
+
+### iniciar containers
+```
+docker compose up -d --build
+```
+
+Junto com o container do laravel, será iniciado um container com o serviço do MySql. Neste caso, pode ser acessado o container e executar as migrations.
+
+### Executar migrations
+```
+php artisan migrate
+```
+
+**Observação**  
+Será necessário configurar as variáveis abaixo no arquivo ".env" para criar o banco de dados e também permitir o app conectar ao banco de dados.
+```
+DB_CONNECTION=mysql
+DB_HOST=db
+DB_PORT=3306
+DB_DATABASE=<database-name>
+DB_USERNAME=root
+DB_PASSWORD=<password>
+```
