@@ -1,0 +1,3 @@
+files/entrypoint.sh
+files/Dockerfile-Laravel
+files/Dockerfile-Teste
