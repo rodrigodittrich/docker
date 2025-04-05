@@ -55,6 +55,9 @@ Junto com o container do laravel, será iniciado um container com o serviço do 
 php artisan migrate
 ```
 
+Após executar as migrations, a banco de dados inicial terá a estrutura abaixo:
+![](https://github.com/rodrigodittrich/docker/blob/main/laravel/mysql-laravel.png)
+
 **Observação**  
 Será necessário configurar as variáveis abaixo no arquivo ".env" para criar o banco de dados e também permitir o app conectar ao banco de dados.
 ```
