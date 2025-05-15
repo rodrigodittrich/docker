@@ -1,3 +1,2 @@
-files/entrypoint.sh
-files/Dockerfile-Laravel
-files/Dockerfile-Teste
+.DS_Store
+files/*
