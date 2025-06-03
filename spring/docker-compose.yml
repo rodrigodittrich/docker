@@ -1,0 +1,11 @@
+services:
+  spring-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: spring-api:dev
+    container_name: spring-api-dev
+    ports:
+      - "9001:9001"
+    environment:
+      - SPRING_PROFILES_ACTIVE=local
